@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gizemli Tavan Arası ve Kayıp Saat</title>
+    <style>
+        body {
+            font-family: "Georgia", serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+        }
+        .book-page {
+            width: 21cm;
+            min-height: 29.7cm;
+            padding: 2cm;
+            margin: 1cm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            page-break-after: always;
+            position: relative;
+        }
+        h1 { text-align: center; color: #2c3e50; font-size: 24px; margin-bottom: 20px; }
+        h2 { color: #d35400; font-size: 18px; border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+        p { line-height: 1.6; font-size: 14pt; text-align: justify; }
+        
+        /* RESİM KESME SİHRİ */
+        .image-container {
+            width: 100%;
+            height: 350px; /* Resmin sayfada kaplayacağı yükseklik */
+            margin-bottom: 20px;
+            border: 3px solid #333;
+            border-radius: 10px;
+            background-image: url('hikaye.png'); /* RESMİN ADI BURADA */
+            background-size: 200% 200%; /* Resmi 2 kat büyüt ki her kare tam sığsın */
+            background-repeat: no-repeat;
+        }
+
+        /* Her sayfa için resmin hangi köşesini göstereceğini seçiyoruz */
+        .img-page1 { background-position: 0% 0%; }     /* Sol Üst */
+        .img-page2 { background-position: 100% 0%; }   /* Sağ Üst */
+        .img-page3 { background-position: 0% 100%; }   /* Sol Alt */
+        .img-page4 { background-position: 100% 100%; } /* Sağ Alt */
+
+        .page-number {
+            position: absolute;
+            bottom: 1cm;
+            right: 2cm;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .dictionary { column-count: 2; font-size: 10pt; }
+        .dictionary li { margin-bottom: 4px; }
+
+        @media print {
+            body { background: none; }
+            .book-page { margin: 0; box-shadow: none; width: 100%; height: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-page">
+        <h1>GİZEMLİ TAVAN ARASI VE KAYIP SAAT</h1>
+        
+        <div class="image-container img-page1"></div>
+
+        <h2>Bölüm 1: Gizemli Keşif</h2>
+        <p>
+            Kasabanın en eski sokağında, bahçesindeki asırlık çınarlarıyla meşhur, ahşap bir ev vardı. Bu evde yaşayan 12 yaşındaki Arda, o gün sabahtan beri <b>içi içine sığmıyordu</b>. Okullar kapanmış, yaz tatili başlamıştı ama yapacak bir şey bulamadığı için <b>canı sıkılıyordu</b>. En yakın arkadaşları Zeynep ve Kerem’i çağırmıştı ama onlar gelene kadar zaman bir türlü geçmek bilmiyordu. Arda, yerinde duramıyor, evin içinde <b>dört dönüyordu</b>.
+        </p>
+        <p>
+            Sonunda kapı çaldı. Arda <b>ok gibi fırladı</b> ve kapıyı açtı. Karşısında Zeynep ve Kerem’i görünce <b>ağzı kulaklarına vardı</b>. "Nerede kaldınız yahu? <b>Gözüm yollarda kaldı</b>," dedi sitemle. Kerem, nefes nefese, "Sorma," dedi. "Bisikletimin zinciri attı, tamir edene kadar <b>akla karayı seçtim</b>. Babam yardım etmese <b>yanmıştım</b>." Zeynep güldü. "Kerem yine abartıyor, <b>pireyi deve yapıyor</b>. Alt tarafı iki dakika sürdü."
+        </p>
+        <p>
+            Üç kafadar, Arda’nın odasına çıktılar. Ancak hava o kadar sıcaktı ki dışarıda top oynamak <b>akıl kârı değildi</b>. Arda, "Tavan arasına çıkalım mı?" dedi. "Dedemin eski eşyalarını karıştırırız." Kerem biraz ürkekti. "Orası çok karanlık, benim <b>ödüm patlar</b>," dedi. Zeynep, "<b>Yüreğin ağzına gelmesin</b> hemen," diye takıldı. "Fener alırız. Hem <b>korkunun ecele faydası yoktur</b>."
+        </p>
+        <p>
+            Tavan arasına çıktıklarında tozdan <b>göz gözü görmüyordu</b>. Her yer eski kutular, kitaplar ve antikalarla doluydu. Arda, "Dikkatli olun, <b>kafa göz yarmayalım</b>," dedi. Eşyaları karıştırırken eski, kadife kaplı bir kutu Zeynep’in <b>gözüne çarptı</b>. "Hey, buraya bakın! Bu kutu çok gizemli duruyor," dedi. Çocuklar hemen kutunun başına üşüştüler. Arda kutuyu açmaya çalıştı ama kilitliydi. "<b>Kafa patlattılar</b> ama kutuyu açmanın yolunu bulamadılar. Kerem, "Belki de <b>boşa kürek çekiyoruz</b>, anahtarı kim bilir nerededir," dedi <b>umudunu keserek</b>. Tam o sırada Arda, kutunun altında sıkışmış sararmış bir kağıt parçası gördü. Kağıdı <b>gözden geçirdi</b>. Üzerinde tuhaf semboller ve bir bilmece vardı.
+        </p>
+        <div class="page-number">1</div>
+    </div>
+
+    <div class="book-page">
+        <div class="image-container img-page2"></div>
+
+        <h2>Bölüm 2: Aslanın Ağzındaki Sır</h2>
+        <p>
+            Arda kağıdı okumaya başladı: "<b>Kulaklarınızı dört açın</b>, okuyorum: 'Zamanın durduğu yerde, aslanın ağzındadır anahtar. Kim ki cesaret eder, <b>turnayı gözünden vurur</b>.'" Kerem, "Ben bundan <b>hiçbir şey anlamadım</b>, <b>Fransız kaldım</b>," dedi. Zeynep, "<b>Jeton şimdi düştü</b> bende!" diye bağırdı. "Bahçedeki aslanlı çeşmeyi kastediyor olabilir mi?" Arda’nın <b>kafasına yattı</b> bu fikir. "Harikasın Zeynep! Hadi hemen bahçeye inelim."
+        </p>
+        <p>
+            Aşağıya indiklerinde bahçıvan Hasan Amca ile karşılaştılar. Hasan Amca biraz <b>aksi bir ihtiyar</b>dı, çocuklara hemen <b>kaş çattı</b>. "Yine ne <b>dolaplar çeviriyorsunuz</b>?" diye sordu. Arda, "<b>Lafı ağzında gevelemeden</b> söyleyelim," diye fısıldadı arkadaşlarına. "Hasan Amca, biz sadece çeşmeye bakacağız." Hasan Amca, "Dikkatli olun, çiçeklerimi ezerseniz <b>külahları değişiriz</b>," dedi ve işine döndü. Çocuklar <b>derin bir nefes aldı</b>. Hasan Amca’yı kızdırmak <b>ateşle oynamak</b> gibiydi.
+        </p>
+        <p>
+            Çeşmenin yanına geldiklerinde aslan heykelinin ağzına baktılar ama içerisi kapkaranlıktı. Kerem, "Ben elimi oraya sokmam, ya bir böcek varsa?" diyerek <b>ayak diredi</b>. Arda, "Hadi ama Kerem, <b>nazlanma</b>. <b>Elini taşın altına koy</b> biraz," dedi. Kerem, "<b>Bin dereden su getirme</b> de yap şu işi," diye ekledi Zeynep. Sonunda Arda cesaretini topladı ve elini heykelin ağzına soktu. Parmaklarına metal bir şey değdi. Çekip çıkardığında elinde paslı bir anahtar vardı. Çocuklar sevinçten <b>havalara uçtu</b>. Hemen tavan arasına geri döndüler. Anahtarı kilide soktuklarında kalpleri küt küt atıyordu. Kilit "çık" diye açıldı. Kutunun içinden, üzerinde işlemeler olan köstekli bir saat ve bir günlük çıktı.
+        </p>
+        <div class="page-number">2</div>
+    </div>
+
+    <div class="book-page">
+        <div class="image-container img-page3"></div>
+
+        <h2>Bölüm 3: Zamanla Oynamak</h2>
+        <p>
+            Arda günlüğü eline aldı. "<b>Göz ucuyla</b> baktım da, bu dedemin dedesine aitmiş," dedi. Zeynep, "Okusana, <b>meraktan çatlayacağım</b>," dedi. Günlükte, bu saatin sihirli olduğu, zamanı geri alabildiği yazıyordu ama bir uyarı da vardı: "Kim ki saati kötüye kullanır, zaman içinde kaybolur. <b>Ayağını denk al</b>." Kerem, "Bu kadarı beni <b>aşıyor</b>. Bence bu işin <b>peşini bırakalım</b>," dedi. "<b>Başımıza çorap örmeyelim</b>." Arda ise kararsızdı, <b>iki arada bir derede kalmıştı</b>. Saati denemek istiyordu ama <b>gözü kesmiyordu</b>.
+        </p>
+        <p>
+            O sırada aşağıdan annesinin sesi duyuldu: "Arda! Odanı hala toplamadın mı? <b>Canıma tak etti</b> artık!" Arda, "<b>Hapı yuttuk</b>," dedi. "Odam savaş alanı gibi." Birden aklına saat geldi. "Belki saati kullanıp zamanı geri alabilirim ve annem gelmeden odayı toplayabilirim," diye düşündü. Bu fikir <b>aklına yattı</b>. Arkadaşlarına, "Kimseye söylemeyin, <b>ağzınızı sıkı tutun</b>," dedi. Arda saatin kurma kolunu çevirdi. Birden etraf bulanıklaştı, başı döndü. Gözünü açtığında sabah saatlerindeydi. Odası henüz dağılmamıştı. "İşe yaradı!" diye bağırdı. Hemen yatağını topladı, masasını düzenledi. Her şey <b>süt liman</b> olmuştu. Annesi odaya girdiğinde şaşkınlıktan <b>küçük dilini yutacaktı</b>. "Aferin oğlum, sonunda <b>yola geldin</b>," dedi annesi ve <b>gözlerine inanamadı</b>.
+        </p>
+        <p>
+            Arda çok mutluydu. Artık her hatasında saati kullanıp zamanı geri alıyordu. Sınavdan kötü not alınca, arkadaşını kırınca... İşler <b>tıkırında gidiyordu</b>. Ama bir süre sonra tuhaf bir şey fark etti. Saati her kullandığında kendisi biraz daha şeffaflaşıyordu. Önce elleri, sonra ayakları silikleşmeye başladı. Arda <b>dehşete kapıldı</b>. "<b>Rengi attı</b>, <b>beti benzi sarardı</b>. Zeynep, "Sana demiştik, <b>kaş yapayım derken göz çıkardın</b>," dedi. "O uyarıyı <b>kulak ardı etmemeliydin</b>." Kerem, "Şimdi ne yapacağız? <b>Elimiz kolumuz bağlandı</b>," diye sızlandı. Arda, "<b>Dizlerimi dövüyorum</b> ama iş işten geçti. <b>Aklım başıma geldi</b> ama geç oldu," dedi üzgünce.
+        </p>
+        <div class="page-number">3</div>
+    </div>
+
+    <div class="book-page">
+        <div class="image-container img-page4"></div>
+
+        <h2>Bölüm 4: Gerçek Mutluluk</h2>
+        <p>
+            Günlüğü tekrar incelediler. En arka sayfada küçük bir not <b>gözlerine ilişti</b>: "Büyüyü bozmak için, saati sahibine, yani zamana teslim et. Dürüstlük en büyük anahtardır." Arda, "<b>Etekleri tutuştu</b> ama ne yapması gerektiğini anladı. Saati kullanmayı bırakmalı ve hatalarıyla yüzleşmeliydi. Ertesi gün okulda sınav vardı. Arda çalışmamıştı. Saati kullanıp soruları önceden öğrenmek aklından geçti ama <b>nefsine hakim oldu</b>. Sınavdan düşük aldı ama dürüsttü. Arkadaşı Kerem ile tartıştı, yine saati kullanmak istedi ama vazgeçti; gidip özür diledi, <b>gönlünü aldı</b>.
+        </p>
+        <p>
+            O gün akşam olduğunda, saati aldığı kutuya geri koydu. "Artık <b>kulağıma küpe olsun</b>, hileyle kazanılan zafer, zafer değildir," dedi. Kutuyu kapattığında vücudu tekrar eski haline dönmüştü. <b>Derin bir oh çekti</b>. Omuzlarından <b>büyük bir yük kalkmıştı</b>. Ertesi gün arkadaşlarıyla buluştuğunda her şeyi anlattı. Zeynep, "Ucuz kurtuldun, <b>verilmiş sadakan varmış</b>," dedi. Kerem gülerek, "Artık macera aramaktan <b>dilim yandı</b>, bundan sonra <b>sudan çıkmış balık</b> gibi ortada gezmeyelim, uslu duralım," dedi.
+        </p>
+        <p>
+            Arda gülümseyerek, "Haklısınız," dedi. "Bu macera bize iyi bir ders oldu. Hatalarımızla yüzleşmek, onları silmekten daha cesurca. Artık <b>önümüze bakalım</b>." Üç arkadaş, batan güneşe karşı dondurmalarını yerken keyifleri <b>yerindeydi</b>. Arda, artık zamanı geri almak değil, anı yaşamak istiyordu. Çünkü biliyordu ki <b>vakit nakittir</b> ve geçen zamanı geri getirmek imkansızdır. O günden sonra o kutuyu bir daha hiç açmadılar. Sırlarını <b>mezar taşı gibi</b> sakladılar ve dostlukları yıllarca <b>bozulmadan</b> devam etti. Kimse onların arasına <b>kara kedi</b> sokamadı. Arda, büyüdüğünde bile o günleri hatırlayıp "<b>Hey gidi günler</b>," diyecekti.
+        </p>
+        <div class="page-number">4</div>
+    </div>
+
+    <div class="book-page">
+        <h2>DEYİMLER SÖZLÜĞÜ (1-50)</h2>
+        <ul class="dictionary">
+            <li><b>Ağzı kulaklarına varmak:</b> Çok sevinmek.</li>
+            <li><b>Ağzını sıkı tutmak:</b> Sır saklamak.</li>
+            <li><b>Akıl kârı olmamak:</b> Mantıklı olmamak.</li>
+            <li><b>Akla karayı seçmek:</b> Çok zorluk çekmek.</li>
+            <li><b>Aklı başıma gelmek:</b> Doğru yolu bulmak.</li>
+            <li><b>Aklına yatmak:</b> Kabul edilebilir bulmak.</li>
+            <li><b>Aksi bir ihtiyar:</b> Huysuz yaşlı.</li>
+            <li><b>Ara bulmak:</b> Barıştırmak.</li>
+            <li><b>Aşıyor (Beni aşar):</b> Gücünün üstünde olmak.</li>
+            <li><b>Ateşle oynamak:</b> Tehlikeli işe girişmek.</li>
+            <li><b>Ayak diremek:</b> İnat etmek.</li>
+            <li><b>Ayağını denk almak:</b> Tedbirli olmak.</li>
+            <li><b>Başının etini yemek:</b> Çok ısrar etmek.</li>
+            <li><b>Başına çorap örmek:</b> Kötü durum hazırlamak.</li>
+            <li><b>Beti benzi sararmak:</b> Korkudan rengi solmak.</li>
+            <li><b>Bin dereden su getirmek:</b> Mazeret uydurmak.</li>
+            <li><b>Bir yastıkta kocamak:</b> Hiç ayrılmamak.</li>
+            <li><b>Boşa kürek çekmek:</b> Boşuna çabalamak.</li>
+            <li><b>Büyük bir yük kalkmak:</b> Rahatlamak.</li>
+            <li><b>Canı burnunda olmak:</b> Çok bunalmak.</li>
+            <li><b>Canı sıkılmak:</b> Keyfi kaçmak.</li>
+            <li><b>Canına tak etmek:</b> Dayanamaz olmak.</li>
+            <li><b>Dehşete kapılmak:</b> Çok korkmak.</li>
+            <li><b>Derin bir nefes almak:</b> Rahatlamak.</li>
+            <li><b>Derin bir oh çekmek:</b> Huzura ermek.</li>
+            <li><b>Dili yanmak:</b> Ders almak.</li>
+            <li><b>Dizlerini dövmek:</b> Pişman olmak.</li>
+            <li><b>Dolap çevirmek:</b> Gizli işler yapmak.</li>
+            <li><b>Dört dönmek:</b> Çare aramak.</li>
+            <li><b>Elimiz kolumuz bağlanmak:</b> Çaresiz kalmak.</li>
+            <li><b>Elini taşın altına koymak:</b> Sorumluluk almak.</li>
+            <li><b>Etekleri tutuşmak:</b> Çok telaşlanmak.</li>
+            <li><b>Etekleri zil çalmak:</b> Çok sevinmek.</li>
+            <li><b>Fikir ayrılığına düşmek:</b> Anlaşamamak.</li>
+            <li><b>Fransız kalmak:</b> Anlamamak.</li>
+            <li><b>Gönlünü almak:</b> Hoşnut etmek.</li>
+            <li><b>Gözden geçirmek:</b> İncelemek.</li>
+            <li><b>Göz gözü görmemek:</b> Karanlık/toz olmak.</li>
+            <li><b>Göz ucuyla bakmak:</b> Gizlice bakmak.</li>
+            <li><b>Gözüne çarpmak:</b> Dikkat çekmek.</li>
+            <li><b>Gözüne girmek:</b> Güven kazanmak.</li>
+            <li><b>Gözü kesmemek:</b> Cesaret edememek.</li>
+            <li><b>Gözü yollarda kalmak:</b> Özlemle beklemek.</li>
+            <li><b>Gözlerine inanamamak:</b> Çok şaşırmak.</li>
+            <li><b>Hapı yutmak:</b> Kötü duruma düşmek.</li>
+            <li><b>Havalara uçmak:</b> Çok sevinmek.</li>
+            <li><b>Hey gidi günler:</b> Geçmişe özlem.</li>
+            <li><b>Hiçbir şey anlamamak:</b> Kavrayamamak.</li>
+            <li><b>İçi içine sığmamak:</b> Çok heyecanlanmak.</li>
+            <li><b>İçinden çıkamamak:</b> Çözememek.</li>
+        </ul>
+    </div>
+    <div class="book-page">
+        <h2>DEYİMLER SÖZLÜĞÜ (51-100)</h2>
+        <ul class="dictionary">
+            <li><b>İki arada bir derede kalmak:</b> Kararsız kalmak.</li>
+            <li><b>İş işten geçmek:</b> Geç kalmak.</li>
+            <li><b>Jeton düşmek:</b> Sonradan anlamak.</li>
+            <li><b>Kafa göz yarmak:</b> Zarar vermek.</li>
+            <li><b>Kafa patlatmak:</b> Çok düşünmek.</li>
+            <li><b>Kafasına yatmak:</b> Doğru bulmak.</li>
+            <li><b>Kara kedi girmek:</b> Arası bozulmak.</li>
+            <li><b>Karadeniz'de gemileri batmak:</b> Üzgün olmak.</li>
+            <li><b>Kaş çatmak:</b> Kızmak.</li>
+            <li><b>Kaş yapayım derken göz çıkarmak:</b> Zarar vermek.</li>
+            <li><b>Keyfi yerinde olmak:</b> Mutlu olmak.</li>
+            <li><b>Korkunun ecele faydası yoktur:</b> Korkmak gereksizdir.</li>
+            <li><b>Kulak ardı etmek:</b> Önemsememek.</li>
+            <li><b>Kulak kabartmak:</b> Gizlice dinlemek.</li>
+            <li><b>Kulak kesilmek:</b> Dikkatle dinlemek.</li>
+            <li><b>Kulaklarına küpe olmak:</b> Ders almak.</li>
+            <li><b>Kulaklarını dört açmak:</b> Çok iyi dinlemek.</li>
+            <li><b>Küçük dilini yutmak:</b> Çok şaşırmak.</li>
+            <li><b>Külahları değişmek:</b> Kavga etmek.</li>
+            <li><b>Lafı ağzında gevelemek:</b> Açık konuşamamak.</li>
+            <li><b>Meraktan çatlamak:</b> Çok merak etmek.</li>
+            <li><b>Mezar taşı gibi:</b> Sır saklamak.</li>
+            <li><b>Nazlanmak:</b> İsteği geciktirmek.</li>
+            <li><b>Nefsine hakim olmak:</b> İradesini tutmak.</li>
+            <li><b>Nuh deyip peygamber dememek:</b> İnat etmek.</li>
+            <li><b>Ok gibi fırlamak:</b> Hızla çıkmak.</li>
+            <li><b>Ödü patlamak:</b> Çok korkmak.</li>
+            <li><b>Önüne bakmak:</b> Geleceğe odaklanmak.</li>
+            <li><b>Peşini bırakmak:</b> Vazgeçmek.</li>
+            <li><b>Pireyi deve yapmak:</b> Abartmak.</li>
+            <li><b>Rengi atmak:</b> Yüzü solmak.</li>
+            <li><b>Sudan çıkmış balık:</b> Şaşkın olmak.</li>
+            <li><b>Suratı asık olmak:</b> Üzgün durmak.</li>
+            <li><b>Süt liman olmak:</b> Sakinleşmek.</li>
+            <li><b>Tabanları yağlamak:</b> Kaçmak.</li>
+            <li><b>Tıkırında gitmek:</b> Yolunda gitmek.</li>
+            <li><b>Turnayı gözünden vurmak:</b> Büyük kazanç.</li>
+            <li><b>Ucuz kurtulmak:</b> Az zararla atlatmak.</li>
+            <li><b>Umudunu kesmek:</b> İnancını yitirmek.</li>
+            <li><b>Vakit nakittir:</b> Zaman değerlidir.</li>
+            <li><b>Verilmiş sadakası olmak:</b> Belayı atlatmak.</li>
+            <li><b>Yanmıştım (Yanmak):</b> Zor durumda kalmak.</li>
+            <li><b>Yerinde duramamak:</b> Hareketli olmak.</li>
+            <li><b>Yola gelmek:</b> Düzelmek.</li>
+            <li><b>Yola koyulmak:</b> Yola çıkmak.</li>
+            <li><b>Yüreği ağzına gelmek:</b> Çok korkmak.</li>
+            <li><b>Canı burnunda olmak:</b> Çok öfkelenmek.</li>
+            <li><b>Alttan almak:</b> Yumuşak davranmak.</li>
+            <li><b>Burnundan kıl aldırmamak:</b> Kibirli olmak.</li>
+            <li><b>Burnunun dikine gitmek:</b> Bildiğini okumak.</li>
+        </ul>
+        <div class="page-number">5</div>
+    </div>
+
+</body>
+</html>
+
